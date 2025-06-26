@@ -55,7 +55,7 @@ export const navBarConfig: NavBarConfig = {
 export const profileConfig: ProfileConfig = {
 	avatar: "assets/images/demo-avatar.png", // Relative to the /src directory. Relative to the /public directory if it starts with '/'
 	name: "Wok",
-	bio: "All problems in computer science can be solved by another level of indirection.",
+	bio: "目前是一名大学生，热爱编程，也喜欢记录思考。",
 	links: [
 		{
 			name: "GitHub",
