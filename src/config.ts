@@ -65,7 +65,7 @@ export const profileConfig: ProfileConfig = {
 		{
 			name: "Gitee",
 			icon: "simple-icons:gitee",
-			url: "https://github.com/hyglgithub",
+			url: "https://gitee.com/hyglgitee",
 		},
 		{
 			name: "CSDN",
