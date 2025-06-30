@@ -63,11 +63,6 @@ export const profileConfig: ProfileConfig = {
 			url: "https://github.com/hyglgithub",
 		},
 		{
-			name: "Gitee",
-			icon: "simple-icons:gitee",
-			url: "https://gitee.com/hyglgitee",
-		},
-		{
 			name: "CSDN",
 			icon: "simple-icons:csdn", // Visit https://icones.js.org/ for icon codes
 			// You will need to install the corresponding icon set if it's not already included
