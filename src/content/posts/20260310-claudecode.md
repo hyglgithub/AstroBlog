@@ -27,7 +27,7 @@ draft: false
 
 详细讲解目前非常火的 AI 技术 Agent Skills 是什么、怎么安装使用，并揭秘其内部原理以及如何开发自己的 Skills 技能包。从 Claude Code 官方技能市场到社区热门的 UI UX Pro MAX 前端工具，手把手教你告别千篇一律的 AI 审美和蓝紫渐变。视频还会对比 Agent Skills 和 MCP、斜杠命令的区别，解释"渐进式披露机制"如何节省上下文 tokens。无论你是刚接触 AI 编程的新手，还是想提升 Cursor / VS Code / Codex AI 编程效率的程序员，或者是对新技术感兴趣的 Vibe Coding 玩家，这期内容都能帮助你快速上手 Agent Skills，让 AI 真正成为你的得力助手。
 
-<iframe src="//player.bilibili.com/player.html?bvid=BV1oPFDzQEG7&autoplay=0" scrolling="no" frameborder="no" framespacing="0" allowfullscreen="true" width="100%" height="500"></iframe>
+<iframe src="//player.bilibili.com/player.html?bvid=BV1T7zzBQEaA&autoplay=0" scrolling="no" frameborder="no" framespacing="0" allowfullscreen="true" width="100%" height="500"></iframe>
 
 ## 推荐学习顺序
 
