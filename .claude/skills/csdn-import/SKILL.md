@@ -109,6 +109,13 @@ image: ""                   # 若有封面图填写 ./image.png，否则省略
 5. **表格**：检查并补全 Markdown 表格对齐线。
 6. **去除多余空行**：连续超过 2 个空行的地方压缩为 1 个空行。
 7. **不添加分隔线**：正文各章节之间**不要**插入 `---` 水平分隔线，直接用标题分隔即可。
+8. **外链展示优化**：正文中出现的裸 URL 统一替换为描述性 Markdown 链接，根据域名和上下文语义推断合适的描述文字，禁止输出纯 URL 作为链接文本。
+   - 示例：`[在知乎阅读 cc-switch 完整介绍](https://zhuanlan.zhihu.com/p/xxx)`
+   - 示例：`[前往 GitHub 仓库](https://github.com/xxx)`
+9. **Bilibili 视频内嵌**：若正文中包含 Bilibili 视频链接（`bilibili.com/video/BVxxx`），提取 BV 号，替换为 iframe 内嵌播放器：
+   ```html
+   <iframe src="//player.bilibili.com/player.html?bvid={BVID}&autoplay=0" scrolling="no" frameborder="no" framespacing="0" allowfullscreen="true" width="100%" height="500"></iframe>
+   ```
 
 ---
 
@@ -130,6 +137,14 @@ src/content/posts/{YYYYMMDD}/
 ```
 src/content/posts/{YYYYMMDD}.md
 ```
+
+**同日期多篇文章时**：若 `{YYYYMMDD}.md` 已存在，使用文章主题关键词作为后缀，例如：
+
+```
+src/content/posts/{YYYYMMDD}-{keyword}.md
+```
+
+示例：`20260310-claudecode.md`
 
 操作顺序：
 1. `run_in_terminal` 创建文件夹（有图片时）：
