@@ -4,7 +4,7 @@
 
 这个博客是我学习与成长的笔记本，写下调试过程、开发技巧、以及一些零散的想法。
 
-本站基于开源项目 [Fuwari](https://github.com/saicaca/fuwari) 搭建，界面简洁，支持 Markdown 编写，非常适合技术写作。
+相关配置参考 [Astro 文档](https://docs.astro.build/zh-cn/getting-started/) 。
 
 ::github{repo="hyglgithub/AstroBlog"}
 

@@ -16,7 +16,8 @@ for (const heading of headings) {
 
 const className = Astro.props.class;
 
-const isPostsRoute = Astro.url.pathname.startsWith("/posts/");
+const base = import.meta.env.BASE_URL.replace(/\/$/, ""); // 移除末尾斜杠，如 "/AstroBlog"
+const isPostsRoute = Astro.url.pathname.startsWith(`${base}/posts/`);
 
 const removeTailingHash = (text: string) => {
 	let lastIndexOfHash = text.lastIndexOf("#");
