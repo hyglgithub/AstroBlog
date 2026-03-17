@@ -1,8 +1,8 @@
 ---
 name: csdn-import
 description: >
-  将用户在 CSDN 上发布的博客文章，通过链接抓取并转换为本项目规范格式，
-  包含正确的 frontmatter、本地化图片资源，以及来源声明。
+   将用户在 CSDN 上发布的博客文章，通过链接抓取并转换为本项目规范格式，
+   复用统一 frontmatter skill，并完成本地化图片资源。
   关键词：csdn、CSDN博客、导入CSDN、存到本地、CSDN转换、CSDN文章、保存博客。
 ---
 
@@ -81,24 +81,14 @@ Invoke-WebRequest -Uri "<图片原始URL>" -OutFile "c:\...\src\content\posts\<Y
 
 ---
 
-### Step 3 — 生成 Frontmatter
+### Step 3 — 生成 Frontmatter（复用共享 Skill）
 
-```yaml
----
-title: <文章标题，保留原中文标题，不修改>
-description: <1-2 句话概括核心内容，约 50-100 字，中文>
-published: <YYYY-MM-DD，从页面提取的发布日期>
-tags: [<标签1>, <标签2>]   # 从文章主题提取 2-5 个精准标签
-category: 原创              # CSDN 发布的自己的文章默认为"原创"
-draft: false
-image: ""                   # 若有封面图填写 ./image.png，否则省略
----
-```
-
-**标签提取规则**：
-- 优先使用 CSDN 页面中已标注的文章标签（`#哈希算法 #java #HashMap` 等）
-- 补充文章中高频出现的核心技术关键词
-- 数量控制在 2-5 个
+- frontmatter 生成必须遵循 `frontmatter-shared` Skill。
+- 本场景特例：
+   - `title` 保留 CSDN 原中文标题，不改写。
+   - `published` 使用页面提取的原始发布日期，不使用抓取当天日期。
+   - 标签优先使用 CSDN 页面已有标签，再补充正文关键词（总量 2-5 个）。
+   - `category` 默认 `原创`。
 
 ### Step 4 — 整理正文格式
 
@@ -202,3 +192,4 @@ draft: false
 - `published` 严格使用页面上的**原始发布日期**，不使用抓取当天日期。
 - 文件夹和文件名统一使用 `YYYYMMDD` 格式（8 位纯数字），与同日期对应。
 - 不修改原文标题，保持与 CSDN 上一致。
+- frontmatter 规则统一由 `frontmatter-shared` 维护，避免在本 Skill 重复定义。
