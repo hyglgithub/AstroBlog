@@ -9,7 +9,7 @@ import { LinkPreset } from "./types/config";
 
 export const siteConfig: SiteConfig = {
 	title: "Wok Think", // Site title, displayed in the browser tab
-	subtitle: "Code • Think • Create", // Site subtitle, displayed in the header
+	subtitle: "Keep going and you’ll be okay！", // Site subtitle, displayed in the header
 	lang: "zh_CN", // 'en', 'zh_CN', 'zh_TW', 'ja', 'ko', 'es', 'th'
 	themeColor: {
 		hue: 250, // Default hue for the theme color, from 0 to 360. e.g. red: 0, teal: 200, cyan: 250, pink: 345
@@ -53,9 +53,9 @@ export const navBarConfig: NavBarConfig = {
 };
 
 export const profileConfig: ProfileConfig = {
-	avatar: "assets/images/demo-avatar.jpg", // Relative to the /src directory. Relative to the /public directory if it starts with '/'
-	name: "Wok",
-	bio: "目前是一名大学生，热爱编程，也喜欢记录思考。",
+	avatar: "assets/images/demo-avatar.png", // Relative to the /src directory. Relative to the /public directory if it starts with '/'
+	name: "wok",
+	bio: "编程爱好者，喜欢用代码，将人类智慧封装成可执行的软件。",
 	links: [
 		{
 			name: "GitHub",
@@ -69,6 +69,11 @@ export const profileConfig: ProfileConfig = {
 			// `pnpm add @iconify-json/<icon-set-name>`
 			url: "https://blog.csdn.net/2301_79742544",
 		},
+		{
+			name: "Bilibili",
+			icon: "simple-icons:bilibili",
+			url: "https://space.bilibili.com/3494360427530583",
+		}
 	],
 };
 

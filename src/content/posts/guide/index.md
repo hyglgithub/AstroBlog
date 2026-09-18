@@ -38,7 +38,7 @@ draft: false
 
 ## 最后留一句话：
 
-> Code • Think • Create  
-> 技术是工具，思考是灵魂，创造是意义。
+> Keep going and you’ll be okay！  
+> 坚持走下去，一切终将向好。
 
 这，就是我写博客的起点。
