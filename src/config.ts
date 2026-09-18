@@ -73,7 +73,7 @@ export const profileConfig: ProfileConfig = {
 			name: "Bilibili",
 			icon: "simple-icons:bilibili",
 			url: "https://space.bilibili.com/3494360427530583",
-		}
+		},
 	],
 };
 
