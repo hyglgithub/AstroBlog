@@ -3,7 +3,7 @@ title: Claude Code + cc-switch + Skills 搭建出一个完整的 AI Agent 编程
 description: 整理了 Claude Code + cc-switch + Skills 的入门教程，帮助你快速搭建完整的 AI 编程环境。三篇内容分别对应安装使用、API 切换工具、AI 技能扩展，建议按顺序学习。
 published: 2026-03-10
 tags: [AI编程, Claude Code, cc-switch]
-category: 原创
+category: AI
 draft: false
 ---
 

@@ -4,7 +4,7 @@ description: 博客的第一篇文章，记录为什么要写博客、想写什�
 published: 2024-08-26
 image: "./cover.jpg"
 tags: [博客, 技术写作, 思考]
-category: 随笔
+category: 思考
 draft: false
 ---
 
